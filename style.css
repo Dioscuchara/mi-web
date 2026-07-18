@@ -1,122 +1,12 @@
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-    color: white;
-    width: 100%;
-}
+/* ========================================================== */
+/*     TECHNOTLAB PREMIUM MINIMALIST DESIGN (UPGRADE 2026)    */
+/* ========================================================== */
 
-.productos {
-    display: flex;
-    flex-direction: column;
-    gap: 24px; 
-    width: 100%;
-    margin-top: 30px;
-}
-
-@media (min-width: 768px) {
-    .productos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-    }
-}
-
-
-h2 {
-    color: #0f172a;
-    text-align: center;
-    font-size: 1.8rem;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-
-
-
-.boton {
-    display: inline-block;
-    background-color: #f59e0b; /* Color naranja Amazon */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    
-    /* SOLUCIÓN: Añade esta línea para centrar el texto perfectamente */
-    text-align: center; 
-    
-    transition: background-color 0.2s ease;
-}
-
-
-.boton:hover {
-    background-color: #d97706;
-}
-
-footer {
-    margin-top: 40px;
-    color: #64748b;
-    font-size: 0.9em;
-}
-.categoria {
-    display: inline-block;
-    background-color: #f1f5f9;
-    color: #475569;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.boton {
-    transition: background-color 0.2s ease;
-}
-
-.imagen-producto {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 12px 0;
-}
-
-.tarjeta {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    height: auto;               
-    display: flex;
-    flex-direction: column;
-}
-
-.tarjeta h3 {
-    margin: 10px 0 5px 0;
-}
-
-.tarjeta p {
-    font-size: 0.95rem;
-    line-height: 1.5;       
-    margin-top: 0;
-    margin-bottom: 25px;
-    flex-grow: 1;
-}
-
-header h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    margin: 0 0 10px 0;
-    text-transform: uppercase;
-}
-
+/* Estilos Generales y Tipografía */
 body {
-    background-color: #f8fafc;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    color: #1e293b;
+    background-color: #0b0f19; /* Fondo oscuro futurista y elegante */
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #f8fafc; /* Texto claro de alta legibilidad */
     margin: 0;
     padding: 0;
     display: flex;
@@ -125,9 +15,210 @@ body {
     max-width: 100%;
 }
 
-main {
-    max-width: 1400px;
-    padding: 20px;
+/* MENÚ SUPERIOR DE CRISTAL (Glassmorphism Effect) */
+.menu-superior {
+    background: rgba(15, 23, 42, 0.75); /* Fondo semitransparente */
+    backdrop-filter: blur(12px); /* Efecto cristal esmerilado profesional */
+    -webkit-backdrop-filter: blur(12px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 20px; /* Bordes totalmente redondeados tipo pastilla */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enlace-menu:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.enlace-menu.activo {
+    color: #ffffff;
+    background-color: #3b82f6; /* Azul eléctrico TechnoLab */
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* ENCABEZADO MINIMALISTA INTENSO */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #1e293b 0%, #0b0f19 100%);
     width: 100%;
     box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ffffff 30%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Logotipo con degradado de color metálico */
+}
+
+header p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    max-width: 1400px;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* TÍTULOS DE LOS CATÁLOGOS */
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 4px solid #3b82f6; /* Línea de diseño lateral azul */
+}
+
+/* SECCIONES Y CUADRÍCULA */
+.seccion-catalogo {
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+
+/* TARJETAS PREMIUM DE ALTA GAMA */
+.tarjeta {
+    background: #111827; /* Gris oscuro profundo */
+    border: 1px solid rgba(255, 255, 255, 0.03); /* Borde casi invisible elegante */
+    padding: 24px;
+    border-radius: 16px; /* Bordes mucho más suaves */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto flotante y brillo al pasar el ratón */
+.tarjeta:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(59, 130, 246, 0.05);
+}
+
+/* CATEGORÍAS */
+.categoria {
+    display: inline-block;
+    background-color: rgba(59, 130, 246, 0.1); /* Fondo transparente teñido de azul */
+    color: #60a5fa;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    align-self: flex-start;
+}
+
+/* IMÁGENES INTEGRADAS PERFECTAS */
+.imagen-producto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 16px 0;
+    filter: brightness(0.95); /* Tono ligeramente cinemático */
+    transition: filter 0.3s ease;
+}
+
+.tarjeta:hover .imagen-producto {
+    filter: brightness(1.05); /* Se ilumina la foto al pasar por la tarjeta */
+}
+
+/* TEXTOS DE PRODUCTO */
+.tarjeta h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #94a3b8; /* Gris suave tipo Apple */
+    margin-top: 0;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+/* BOTÓN DE AMAZON MODERNIZADO */
+.boton {
+    display: inline-block;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); /* Degradado Amazon */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35);
+    transform: scale(1.02); /* Pequeño pulso de crecimiento */
+}
+
+/* PIE DE PÁGINA (Footer) */
+footer {
+    margin-top: 80px;
+    padding: 30px 0;
+    color: #4b5563;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+    width: 100%;
+    text-align: center;
 }
