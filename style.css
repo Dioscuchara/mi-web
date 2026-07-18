@@ -71,3 +71,10 @@ footer {
 .boton {
     transition: background-color 0.2s ease;
 }
+.imagen-producto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Recorta la foto perfectamente para que no se deforme */
+    border-radius: 8px;
+    margin: 12px 0;
+}
