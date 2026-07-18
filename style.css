@@ -56,3 +56,18 @@ footer {
     color: #64748b;
     font-size: 0.9em;
 }
+.categoria {
+    display: inline-block;
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    transition: background-color 0.2s ease;
+}
