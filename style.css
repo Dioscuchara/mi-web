@@ -225,14 +225,14 @@ footer {
     text-align: center;
 }
 
-/* SECCIÓN DE CONTACTO */
 .seccion-contacto {
     max-width: 600px;
     width: 100%;
-    margin: 80px auto;
+    margin: 30px auto; /* <- CAMBIADO: De 800px/80px pasamos a 30px para recortar el espacio arriba y abajo */
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 
 .seccion-contacto p {
     color: #94a3b8;
