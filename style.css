@@ -1,7 +1,7 @@
 body {
-    background-color: #0b0f19; /* Fondo oscuro futurista y elegante */
+    background-color: #0b0f19;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    color: #f8fafc; /* Texto claro de alta legibilidad */
+    color: #f8fafc;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,8 +11,8 @@ body {
 }
 
 .menu-superior {
-    background: rgba(15, 23, 42, 0.75); /* Fondo semitransparente */
-    backdrop-filter: blur(12px); /* Efecto cristal esmerilado profesional */
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     width: 100%;
     display: flex;
@@ -31,7 +31,7 @@ body {
     font-weight: 600;
     font-size: 0.9rem;
     padding: 8px 16px;
-    border-radius: 20px; /* Bordes totalmente redondeados tipo pastilla */
+    border-radius: 20px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -42,11 +42,10 @@ body {
 
 .enlace-menu.activo {
     color: #ffffff;
-    background-color: #3b82f6; /* Azul eléctrico TechnoLab */
+    background-color: #3b82f6;
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-/* ENCABEZADO MINIMALISTA INTENSO */
 header {
     text-align: center;
     padding: 80px 20px;
@@ -73,7 +72,6 @@ header h1 {
     }
 }
 
-
 header p {
     color: #94a3b8;
     max-width: 600px;
@@ -82,7 +80,6 @@ header p {
     line-height: 1.6;
 }
 
-/* CONTENEDOR PRINCIPAL */
 main {
     max-width: 1400px;
     padding: 40px 20px;
@@ -94,7 +91,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* TÍTULOS DE LOS CATÁLOGOS */
 h2 {
     color: #ffffff;
     font-size: 2rem;
@@ -104,10 +100,9 @@ h2 {
     margin-top: 60px;
     margin-bottom: 30px;
     padding-left: 10px;
-    border-left: 4px solid #3b82f6; /* Línea de diseño lateral azul */
+    border-left: 4px solid #3b82f6;
 }
 
-/* SECCIONES Y CUADRÍCULA */
 .seccion-catalogo {
     margin-bottom: 80px;
     width: 100%;
@@ -128,30 +123,27 @@ h2 {
     }
 }
 
-/* TARJETAS PREMIUM DE ALTA GAMA */
 .tarjeta {
-    background: #111827; /* Gris oscuro profundo */
-    border: 1px solid rgba(255, 255, 255, 0.03); /* Borde casi invisible elegante */
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.03);
     padding: 24px;
-    border-radius: 16px; /* Bordes mucho más suaves */
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Efecto flotante y brillo al pasar el ratón */
 .tarjeta:hover {
     transform: translateY(-6px);
     border-color: rgba(59, 130, 246, 0.2);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(59, 130, 246, 0.05);
 }
 
-/* CATEGORÍAS */
 .categoria {
     display: inline-block;
-    background-color: rgba(59, 130, 246, 0.1); /* Fondo transparente teñido de azul */
-    color: #60a5fa;
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
     font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -161,22 +153,20 @@ h2 {
     align-self: flex-start;
 }
 
-/* IMÁGENES INTEGRADAS PERFECTAS */
 .imagen-producto {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
     margin: 16px 0;
-    filter: brightness(0.95); /* Tono ligeramente cinemático */
+    filter: brightness(0.95);
     transition: filter 0.3s ease;
 }
 
 .tarjeta:hover .imagen-producto {
-    filter: brightness(1.05); /* Se ilumina la foto al pasar por la tarjeta */
+    filter: brightness(1.05);
 }
 
-/* TEXTOS DE PRODUCTO */
 .tarjeta h3 {
     font-size: 1.25rem;
     color: #ffffff;
@@ -187,16 +177,15 @@ h2 {
 .tarjeta p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: #94a3b8; /* Gris suave tipo Apple */
+    color: #94a3b8;
     margin-top: 0;
     margin-bottom: 24px;
     flex-grow: 1;
 }
 
-/* BOTÓN DE AMAZON MODERNIZADO */
 .boton {
     display: inline-block;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); /* Degradado Amazon */
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
     color: white;
     padding: 12px 20px;
     text-decoration: none;
@@ -211,10 +200,9 @@ h2 {
 .boton:hover {
     background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
     box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35);
-    transform: scale(1.02); /* Pequeño pulso de crecimiento */
+    transform: scale(1.02);
 }
 
-/* PIE DE PÁGINA (Footer) */
 footer {
     margin-top: 80px;
     padding: 30px 0;
@@ -228,18 +216,18 @@ footer {
 .seccion-contacto {
     max-width: 600px;
     width: 100%;
-    margin: 10px auto; /* <- CAMBIADO: Espacio mínimo de 10px arriba y abajo */
+    margin: 10px auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
 
 .seccion-contacto h2 {
-    margin-top: 15px; /* <- Recorta el espacio entre el catálogo anterior y el título */
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .seccion-contacto p {
-    margin-bottom: 20px; /* <- Acerca el texto explicativo al recuadro del formulario */
+    margin-bottom: 20px;
 }
 
 
@@ -266,7 +254,6 @@ footer {
     letter-spacing: 0.5px;
 }
 
-/* INPUTS Y TEXTAREA OSCUROS */
 .grupo-input input, 
 .grupo-input textarea {
     background-color: #0b0f19;
@@ -288,7 +275,7 @@ footer {
 
 .grupo-input textarea {
     height: 120px;
-    resize: vertical; /* Permite estirarlo hacia abajo pero no hacia los lados */
+    resize: vertical;
 }
 
 .boton-formulario {
@@ -308,34 +295,34 @@ footer {
 .contenedor-busqueda {
     width: 100%;
     max-width: 550px;
-    margin: 30px auto 30px auto; /* 30px exactos por arriba y 30px exactos por abajo */
+    margin: 30px auto 30px auto;
     padding: 0 20px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    gap: 16px; /* Deja un espacio limpio y fijo entre la lupa exterior y la barra */
+    gap: 16px;
 }
 
 .lupa-svg {
-    width: 20px;          /* Tamaño fino y elegante */
+    width: 20px;
     height: 20px;
-    color: #94a3b8;       /* Gris suave Apple por defecto */
+    color: #94a3b8;
     opacity: 0.6;
     transition: all 0.3s ease;
-    flex-shrink: 0;       /* Evita que se deforme */
+    flex-shrink: 0;
 }
 
 .contenedor-busqueda:focus-within .lupa-svg {
     opacity: 1;
-    color: #3b82f6;       /* Se ilumina en azul eléctrico al pinchar para escribir */
-    transform: scale(1.05); /* Hace un micro pulso muy sutil y moderno */
+    color: #3b82f6;
+    transform: scale(1.05);
 }
 #buscador {
     width: 100%;
     background-color: #111827;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    padding: 14px 20px; /* Volvemos a un padding normal y limpio porque la lupa ya está fuera */
+    padding: 14px 20px;
     color: white;
     font-size: 1rem;
     font-family: inherit;

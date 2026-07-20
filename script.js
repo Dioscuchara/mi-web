@@ -26,8 +26,9 @@ buscador.addEventListener('keyup', function(evento) {
         const descripcion = tarjeta.querySelector('p').textContent;
         const textoTarjetaLimpio = limpiarTexto(titulo + " " + descripcion);
 
-        const coincideTodo = palabrasBuscadas.every(function(palabra) {
-            return textoTarjetaLimpio.includes(palabra);
+        const coincideTodo = palabrasBuscadas.every(function(palabraBuscada) {
+            const expresionRegular = new RegExp('\\b' + palabraBuscada, 'i');
+            return expresionRegular.test(textoTarjetaLimpio);
         });
 
         if (coincideTodo) {
